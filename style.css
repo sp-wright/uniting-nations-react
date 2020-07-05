@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(69, 69, 69);
+  min-height: 100vh;
+  cursor: default;
+  background-color: rgb(243, 243, 243);
+}
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  padding: 0 10%;
+  background-color: #ffe277;
+  height: 15vh;
+  z-index: 2;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
+}
+
+.title-flag-img {
+  color: #58b4ae;
+  padding-right: 0.5rem;
+}
+
+.flag-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.search-field {
+  width: 25%;
+  margin: 2rem 5rem;
+}
+
+.output-card {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: white;
+  filter: drop-shadow(0 1px 3px rgba(69, 69, 69, 0.158));
+  border-radius: 0 0 8px 8px;
+  margin: 0.5rem;
+  cursor: pointer;
+  height: 375px;
+}
+
+.flag-capital-txt {
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.flag-img {
+  width: 100%;
+  width: 250px;
+  height: 160px;
+  filter: drop-shadow(0 1px 3px rgba(69, 69, 69, 0.158));
+}
+
+.flag-info {
+  padding: 1rem;
+}
+
+.flag-info-text-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flag-info-text-headers p {
+  font-weight: 700;
+}
+
+/* SINGLE */
+
+.output-single-card {
+  display: flex;
+  margin: 2rem 0;
+  padding: 3rem;
+  border-radius: 8px;
+  background-color: white;
+  filter: drop-shadow(0 1px 3px rgba(69, 69, 69, 0.158));
+  justify-content: space-between;
+  width: 80%;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.output-single-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+.output-single-card img {
+  width: 350px;
+  filter: drop-shadow(0 1px 3px rgba(69, 69, 69, 0.158));
+}
+
+.output-single-text {
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.map {
+  grid-column: 1/3;
+  margin: 0;
+  padding: 0;
+}
+
+.back {
+  position: absolute;
+  top: 10px;
+  left: 8px;
+  cursor: pointer;
+  color: #58b4ae;
+}
+
+/* MEDIA */
+
+@media (max-width: 700px) {
+  header {
+    justify-content: center;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .search-field {
+    width: 75%;
+    margin: auto;
+    padding-bottom: 1rem;
+  }
+
+  .output-single-card {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 2.75rem 1.25rem 1.25rem;
+  }
+  .output-single-card img {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+}
