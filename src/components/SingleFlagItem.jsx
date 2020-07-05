@@ -10,7 +10,7 @@ const SingleFlagItem = (props) => {
   };
 
   const Marker = () => {
-    return <img style={{ width: '20px' }} src="/images/marker.png" alt="marker" />;
+    return <img style={{ width: '20px' }} src={require('../images/marker.png')} alt="marker" />;
   };
 
   return (
@@ -44,7 +44,7 @@ const SingleFlagItem = (props) => {
         <img src={flag} alt={`${name}'s flag`} />
       </div>
       <div className="map" style={{ height: '50vh', width: '100%' }}>
-        <GoogleMapReact bootstrapURLKeys={{ key: 'AIzaSyCStVVUao6b8wq5rvB4A1I_4IHnQQD71aA' }} defaultCenter={center} defaultZoom={5}>
+        <GoogleMapReact bootstrapURLKeys={{ key: 'STRING' }} defaultCenter={center} defaultZoom={5}>
           <Marker lat={center.lat} lng={center.lng} />
         </GoogleMapReact>
       </div>

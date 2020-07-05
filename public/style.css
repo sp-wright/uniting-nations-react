@@ -12,6 +12,8 @@ body {
   background-color: rgb(243, 243, 243);
 }
 
+/********************* HEADING *********************/
+
 header {
   display: flex;
   position: sticky;
@@ -42,10 +44,14 @@ header {
   align-items: center;
 }
 
+/********************* SEARCH FIELD *********************/
+
 .search-field {
   width: 25%;
   margin: 2rem 5rem;
 }
+
+/********************* FLAG ITEM *********************/
 
 .output-card {
   display: flex;
@@ -85,7 +91,7 @@ header {
   font-weight: 700;
 }
 
-/* SINGLE */
+/********************* SINGLE FLAG ITEM *********************/
 
 .output-single-card {
   display: flex;
@@ -130,7 +136,7 @@ header {
   color: #58b4ae;
 }
 
-/* MEDIA */
+/********************* MEDIA *********************/
 
 @media (max-width: 700px) {
   header {
