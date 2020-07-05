@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/uniting-nations-react/precache-manifest.15fe338c5a85ebac9f0cab7992d32f4d.js"
+  "/uniting-nations-react/precache-manifest.b781446562b248ae696dc5f8a3c03cdd.js"
 );
 
 self.addEventListener('message', (event) => {
